@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jul 15 09:11:32 2024
+@author: Kasish
+Below is the Python code for the Simple Calculator
+"""
+
 import tkinter as tk
 
 calculation = ""
@@ -24,7 +31,6 @@ def clear_field():
   calculation = ""
   text_result.delete(1.0, "end")
   
-
 root = tk.Tk()
 root.geometry("300x275")
 
@@ -70,27 +76,4 @@ btn_clear.grid(row=6, column= 1, columnspan=2)
 btn_eval = tk.Button(root, text="=", command= evaluate_calculation , width=11, font=("Arial", 14))
 btn_eval.grid(row=6, column= 3, columnspan=2)
 
-
-
-
-
 root.mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
